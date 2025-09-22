@@ -1,0 +1,18 @@
+(
+  variant {
+    Init = record {
+      minting_account = "af407364984e5620f83619ade6cdf87c8102339904e3f5b0cd134f448ba5b88d";
+      initial_values = vec {
+        record {
+          // principal marfgold1
+          "c87b937decf0c6a97968ccc350aeca5dcfc82f3bab4eb4eb22599e0025afae1f";
+          record { e8s = 10_000_000_000 : nat64 }
+        }
+      };
+      send_whitelist = vec {};
+      transfer_fee = opt record { e8s = 10_000 : nat64 };
+      token_symbol = opt "LICP";
+      token_name = opt "Local ICP"
+    }
+  }
+)
